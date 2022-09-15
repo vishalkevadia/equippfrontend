@@ -1,0 +1,130 @@
+.nawo .login-page {
+  background: #2D5155;
+  height:  100vh ;
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+
+.nawo .no-orderBox {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.nawo .hhh {
+  position: relative;
+  top: 65px;
+}
+
+.nawo .no-orderBox h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.nawo .no-orderBox p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  margin-top: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nawo .no-orderBox input {
+  padding: 20px 30px;
+  gap: 10px;
+
+  width: 430px;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+
+
+.nawo .ph-number {
+  color: #E8815D;
+}
+
+.nawo-btn {
+  display: block;
+}
+
+.withoutorderImg {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.withoutorderImg img {
+  width: 60%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.withoutorderPara {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nawo .no-orderBox p {
+  margin-top: 0px;
+}
+
+
+ 
+
+
+
+ /* /? ///////////////////////////////////  min  heigh5t /////////////////////////////////////////////////////////// */
+
+ @media only all and (min-height: 1025px) {
+
+ 
+
+ }
+
+ @media only all and (max-height: 1025px) {
+ 
+ }
+
+ @media only all and (max-height: 922px) {
+    .nawo .no-orderBox {
+        height: 75vh;
+      }
+ }
+
+ @media only all and (max-height: 840px) {
+   
+
+ }
+
+ @media only all and (max-height: 670px) {
+    
+
+ }

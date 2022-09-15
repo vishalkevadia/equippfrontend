@@ -1,0 +1,226 @@
+.suo-login-page {
+  background: #2D5155;
+  height: calc(100vh - 94px);
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100vh;
+}
+
+.suo-login-box {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.suo-login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.suo-login-box p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  margin-top: 30px;
+}
+
+
+
+.suo-login-box .bb input {
+  width: 58px !important;
+  justify-content: center;
+  border: 1px solid #E8815D;
+}
+
+.suo-login-box input {
+  gap: 10px;
+
+  width: 430px;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+
+.step {
+  font-family: 'Red Hat Display';
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #767677;
+}
+
+.pincode-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pincode-input-text {
+  width: 52px !important;
+  height: 55px !important;
+  border: 1px solid #E8815D !important;
+  border-radius: 10px;
+}
+
+.signupOtp img {
+  height: 207px;
+  width: 250px;
+  position: relative;
+  bottom: 18px;
+}
+
+button[disabled] {
+  color: #D0D0D1;
+  border: 1px solid #D0D0D1;
+  cursor: not-allowed;
+}
+.right-arrow[disabled]{
+  opacity: 0.5;
+}
+
+
+@media only all and (max-width: 610px) {
+  form>div {
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .suo-login-box {
+    height: 100vh;
+    width: 400px;
+    padding: 60px;
+  }
+
+  .suo-login-page {
+    background: #2D5155; 
+    height: 100vh;
+  }
+}
+
+
+/* /? ///////////////////////////////////  min  heigh5t /////////////////////////////////////////////////////////// */
+
+@media only all and (min-height: 1025px) {
+
+  .suo-login-box {
+    height: 705px;
+    padding: 40px;
+  }
+
+
+}
+
+@media only all and (max-height: 1025px) {
+  .suo-login-box {
+    height: 710px;
+    padding: 40px;
+  }
+
+  .suo-login-box p {
+    margin: 5px 0 !important;
+  }
+
+  .signupOtp img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media only all and (max-height: 922px) {
+  .suo-login-box {
+    height: 600px;
+    width: 400px;
+    padding: 30px;
+  }
+
+  .suo-login-box .bb input {
+    width: 48px !important;
+    height: 48px !important;
+    justify-content: center;
+    border: 1px solid #E8815D;
+  }
+
+  .suo-login-box .continue-btn-outline {
+    margin: 18px auto auto auto;
+  }
+}
+
+@media only all and (max-height: 840px) {
+
+
+  .suo-login-box {
+    height: 500px;
+    width: 350px;
+    padding: 25px;
+  }
+
+  .suo-login-box p {
+    font-size: 12px;
+  }
+
+  .suo-login-box .bb input {
+    width: 39px !important;
+    height: 41px !important;
+    justify-content: center;
+    border: 1px solid #E8815D;
+  }
+
+  .signupOtp img {
+    height: 129px;
+    object-fit: contain;
+  }
+
+  .info-br {
+    display: none;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .continue-btn-outline {
+    margin: 16px auto 16px auto;
+    height: 45px;
+  }
+
+}
+
+
+
+@media only all and (max-height: 670px) {
+
+  .suo-login-box p {
+    font-size: 12px;
+  }
+
+  .suo-login-box .bb input {
+    width: 39px !important;
+    height: 41px !important;
+    justify-content: center;
+    border: 1px solid #E8815D;
+  }
+
+  .signupOtp img {
+    height: 120px;
+    object-fit: contain;
+  }
+
+}

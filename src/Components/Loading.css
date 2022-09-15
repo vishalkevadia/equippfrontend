@@ -1,0 +1,31 @@
+.laodGif {
+  max-width: 400px;
+  background-color: #ffffff00;
+  position: absolute;
+  top: 50%;
+  left: 50%;  transform: translate(-50%, -50%);
+  z-index: 111111;
+
+}
+.loading{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;  transform: translate(-50%, -50%);
+  z-index: 1111;
+  background: #2D5155;
+}
+
+ 
+
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 325px) {
+
+  .loading{
+    color: #426572;
+  }
+}
+

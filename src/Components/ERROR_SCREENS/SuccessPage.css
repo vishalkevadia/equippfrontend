@@ -1,0 +1,60 @@
+.success-container {
+  background-color: #2D5155;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.success-container .success-title {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 40px 0;
+}
+
+
+.success-container .success-desc {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.success-container .success-button {
+  width: 430px;
+  height: 56px;
+  background: #2D5155;
+  border-radius: 10px;
+  border: 1px solid #E8815D;
+
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: #FFFFFF;
+
+
+  margin-top: 96px;
+}
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 325px) {
+
+  .success-button,
+  .success-desc {
+    width: 92vw !important;
+  }
+}

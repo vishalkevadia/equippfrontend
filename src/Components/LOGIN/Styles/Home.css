@@ -1,0 +1,231 @@
+.homepage {
+  height: 100vh;
+}
+
+.homepage .homepage-left {
+  background: #184449;
+  padding: 0 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.homepage .homepage-left div {
+  display: grid;
+  place-items: center;
+}
+
+
+.homepage .homepage-left p {
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #E6E7E8;
+  margin-bottom: 30px;
+}
+
+.homepage .homepage-left .continue-btn {
+  padding: 20px 60px;
+  background: linear-gradient(263.44deg, #C76537 0.13%, #EF9571 30.69%, #BC5137 62.42%, #F6996B 117.66%);
+  border-radius: 10px;
+
+  width: 354px;
+  height: 56px;
+  border: none;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 4.25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+
+.box {
+  height: 70%;
+}
+
+.img-fluid {
+  height: 80%;
+}
+
+
+.homepage .homepage-right {
+  background: #2D5155;
+  padding: 100px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  display: block;
+  height: 100vh;
+}
+
+/* .homepage .homepage-right .box img {
+ height: 475px;
+ position: relative;
+ right: 77px;
+ width: 700px;
+ object-fit: contain;
+} */
+
+.logo-title .logo_item {
+  width: 279px;
+  height: 259px;
+  object-fit: contain;
+}
+
+
+
+.homepage .homepage-right h2 {
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #E8815D;
+  display: block !important;
+}
+
+.homepage .homepage-right p {
+  font-family: 'Spline Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #E6E7E8;
+  margin-bottom: 0;
+}
+
+.homepage .homepage-right-res {
+  display: none !important;
+}
+
+@media screen and (min-width:1250px) {
+  .logo-title img {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width:1366px) {
+
+  .homepage .homepage-left {
+    align-items: center;
+    background: #184449;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px;
+  }
+
+  .homepage .homepage-left {
+    align-items: center;
+    background: #184449;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px;
+  }
+
+  .homepage .homepage-right {
+    background: #2D5155;
+    padding: 100px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* .homepage .homepage-right .box img {
+   width: 482px;
+   height: 414px;
+   object-fit: cover;
+} */
+}
+
+@media screen and (max-width: 1024px) and (max-height:768px) {
+
+  .logo-title .logo_item {
+    width: 400px;
+    height: 188px;
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .homepage .homepage-right {
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 775px),
+(max-width: 1024px),
+(max-width: 325px) {
+
+  .homepage .homepage-left .continue-btn { 
+    width: 90vw; 
+  }
+
+  .homepage .homepage-right h2 {
+    display: none;
+  }
+
+  .homepage .homepage-left {
+    padding: 44px 41px 60px 45px !important;
+    height: 100vh;
+  }
+
+  .homepage .homepage-right-res {
+    display: block !important;
+    font-family: 'Spline Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #E6E7E8;
+    margin-bottom: 44px;
+  }
+
+  .homepage .homepage-right-res p {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #E6E7E8;
+  }
+
+  .homepage .homepage-right {
+    display: none !important;
+  }
+
+  /* 
+  .logo-title .logo_item {
+
+    margin-top: -88px;
+    margin-right: 19px;
+
+  } */
+
+  .homepage .homepage-left p {
+    font-family: 'Spline Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 245px;
+    text-align: center;
+
+
+    color: #B9BABB;
+  }
+
+}

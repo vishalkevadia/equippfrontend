@@ -1,0 +1,110 @@
+.login-page {
+  background: #2D5155;
+  height: calc(100vh - 99px);
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+  margin-bottom: 20px;
+}
+
+.login-box p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  margin-top: 26px;
+}
+
+
+
+
+
+.product-box {
+  width: 430px;
+  height: 180px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-box img {
+  max-width: 196px;
+  max-height: 198px;
+}
+
+.product-box p {
+  text-align: start;
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  padding-right: 60px;
+}
+
+.ph-number {
+  color: #E8815D;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 325px) {
+  .nav {
+    display: none;
+  }
+
+  .login-page {
+    background: #ffffff;
+    padding: 0 50px;
+    margin-top: 60px;    height: 100vh;
+  }
+
+  .login-box {
+    width: 310px;
+    height: 100vh;
+    padding: 95px 16px;
+  }
+
+
+
+  .product-box p {
+    padding-right: 22px;
+  }
+
+  .product-box {
+    width: 350px;
+  }
+}
