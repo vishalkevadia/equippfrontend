@@ -1,0 +1,130 @@
+ .homepage2 {
+   height: 100vh;
+ }
+
+ .homepage2 .homepage2-left {
+   background: #184449;
+   padding: 120px 100px 112px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .homepage2 .homepage2-left div {
+   display: grid;
+   place-items: center;
+ }
+
+ .homepage2 .homepage2-left p {
+   font-family: 'Spline Sans', sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   text-align: center;
+   color: #E6E7E8;
+   margin-bottom: 30px;
+ }
+
+ .homepage2 .homepage2-left .continue-btn {
+   padding: 20px 60px;
+   background: linear-gradient(263.44deg, #C76537 0.13%, #EF9571 30.69%, #BC5137 62.42%, #F6996B 117.66%);
+   border-radius: 10px;
+
+   width: 354px;
+   height: 56px;
+   border: none;
+
+   font-family: 'Red Hat Display', sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 16px;
+   letter-spacing: 4.25px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+ }
+
+
+ .homepage2 .homepage2-right {
+   background: #2D5155;
+   padding: 120px 100px 112px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-direction: column;
+ }
+
+ .homepage2 .homepage2-right .box img{
+   width: 460px;
+   height: 360px;
+ }
+
+ .homepage2 .homepage2-right .typo h2:first-child {
+   font-family: 'Spline Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 24px;
+   color: #E6E7E8;
+ }
+
+ .homepage2 .homepage2-right .typo .highlight h2 {
+   font-family: 'Spline Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 58px;
+   color: #E8815D;
+   margin-bottom: 0;
+   display: block;
+ }
+
+ .homepage2 .homepage2-right p {
+   font-family: 'Spline Sans', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 24px;
+   color: #E6E7E8;
+   margin-bottom: 0;
+ }
+
+
+ .homepage2 .homepage2-right-res  {
+   display: none !important;
+ }
+
+
+ @media screen and (max-width: 425px),
+ (max-width: 375px),
+ (max-width: 325px) {
+
+ 
+   .homepage2 .homepage2-left {
+     padding: 80px 45px 60px 45px;
+     height: 100vh;
+   }
+
+   .homepage2 .homepage2-right-res {
+     display: block !important;
+     font-family: 'Spline Sans';
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 22px;
+     text-align: center;
+     color: #E6E7E8;
+     margin-bottom: 44px;
+   }
+
+   .homepage2 .homepage2-left p {
+     font-family: 'Spline Sans';
+     font-size: 14px;
+     line-height: 22px;
+     color: #B9BABB;
+   }
+
+   .homepage2-right {
+     display: none !important;
+   }
+
+ }

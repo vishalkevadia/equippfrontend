@@ -1,0 +1,139 @@
+.choose-type-container {
+  overflow-x: hidden;
+}
+
+
+.login-page {
+  background: #2D5155;
+  height: calc(100vh - 99px);
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-box {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.login-box p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+
+.login-box input {
+  padding: 20px 30px;
+  gap: 10px;
+
+  width: 430px;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+
+
+.step {
+  font-family: 'Red Hat Display';
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #767677;
+}
+
+.highlight {
+  color: #E8815D !important;
+}
+
+
+
+.btn-check:active+.btn,
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:active {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #fd0049;
+  width: 430px;
+}
+
+.btn-outline-primary {
+  padding: 20px 60px;
+  gap: 10px;
+  width: 430px;
+  height: 56px;
+  border-radius: 10px;
+
+  border: 1px solid #D0D0D1;
+  background-color: #FFFFFF;
+
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  color: #111;
+  margin-top: 30px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #fff;
+  border-color: #E8815D;
+  color: #111;
+}
+
+.btn-check:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-check {
+  display: none;
+}
+
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 325px) {
+  .nav {
+    display: none;
+  }
+
+  .ct-login-page {
+    background: #ffffff;
+    padding: 0 50px;
+    margin-top: 60px;
+    height: 100vh;
+  }
+
+
+
+
+  .btn-outline-primary {
+    width: 385px;
+  }
+}

@@ -1,0 +1,286 @@
+.nav,
+.check-nav {
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
+.card-heading {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.card-short-description {
+  font-family: 'Spline Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #494949;
+}
+
+.disable-button {
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: #B9BABB;
+}
+
+
+.mainPage {
+  background-color: #2D5155;
+  height: 100vh;
+  position: relative;
+}
+
+.login-page {
+  background: #2D5155;
+  height: 100vh;
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.login-box {
+  width: 510px;
+  /* height: 736px; */
+  height: 87%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  /* padding: 58px 40px; */
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+  margin-bottom: 25px;
+}
+
+
+
+.login-box p {
+  font-family: 'Spline Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #426572;
+  margin-bottom: 0;
+}
+
+.login-box input {
+  padding: 20px 15px;
+  gap: 10px;
+
+  width: 100%;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+.login-box input::placeholder {
+  color: #1C1C1C;
+}
+
+.continue-btn-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  border: solid 1px #F6996B;
+  background-color: #FFFFFF;
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  color: #426572;
+  margin-top: 21px;
+}
+
+.ph-number {
+  color: #E8815D !important;
+  font-family: 'Spline Sans';
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.pincode-input-text {
+  width: 51px !important;
+  height: 55px !important;
+  border: 1px solid #E8815D !important;
+  border-radius: 10px;
+  margin-right: 5px !important;
+}
+
+
+
+
+.login-box form {
+  width: 26rem;
+}
+
+
+
+
+/* /
+ ////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////
+  */
+
+@media only all and (max-width: 654px),(max-width: 768px)
+{
+  .login-page {
+    background: #ffffff;
+    padding: 0px;
+  }
+
+.orders .page-title { 
+  display: none;
+}
+
+  .login-box {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+}
+
+
+
+/* /? ///////////////////////////////////  min  heigh5t /////////////////////////////////////////////////////////// */
+
+@media only all and (min-height: 1025px) {
+
+  .login-box {
+    height: 736px;
+    margin: auto;
+  }
+
+  .login-page {
+    background-color: #2D5155;
+  }
+
+}
+
+@media only all and (max-height: 1025px) {
+  .login-box {
+    height: 736px;
+    margin: auto;
+  }
+}
+
+@media only all and (max-height: 922px) {
+  .login-box {
+    height: 650px;
+    width: 450px;
+  }
+
+  .login-box form {
+    width: 24rem;
+  }
+}
+
+@media only all and (max-height: 840px) {
+  .login-box {
+    height: 500px;
+    width: 400px;
+
+    padding: 25px 7px;
+  }
+
+  .login-box h2 {
+    font-size: 25px;
+    line-height: 27px;
+    margin-bottom: 6px;
+  }
+
+  .signupImg img {
+    width: 67% !important;
+  }
+
+  .login-box form {
+    width: 22rem;
+  }
+
+  .login-box p {
+    font-size: 12px;
+  }
+
+
+}
+
+@media only all and (max-height: 690px) {
+  .login-box {
+    height: 420px;
+    width: 350px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 6px;
+  }
+
+  .signupImg img,
+  .login-img img {
+    width: 67% !important;
+  }
+
+
+  .continue-btn-outline {
+    margin: 15px auto auto auto;
+  }
+
+  .login-box input {
+    height: 44px;
+  }
+
+  .continue-btn-outline {
+    height: 44px;
+    font-size: 12px;
+  }
+
+  .login-box form {
+    width: 18rem;
+  }
+
+  /* .common-width {
+    width: 100%;
+  } */
+
+}

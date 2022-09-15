@@ -1,0 +1,119 @@
+.efs-login-page {
+    background: #2D5155;
+    height: calc(100vh - 96px);
+    padding: 0 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .efs-login-box {
+    width: 510px;
+    height: 736px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .efs-login-box h2 {
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #2D5155;
+  }
+  
+  .efs-login-box p {
+    font-family: 'Spline Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #494949;
+    margin-top: 30px;
+  }
+  
+  .efs-login-box input {
+    padding: 20px 30px;
+    gap: 10px;
+    width: 430px;
+    height: 56px;
+    border: 1px solid #D0D0D1;
+    border-radius: 10px;
+  }
+  
+  .efs-login-box .email-input {
+    padding: 0 10px !important;
+  }
+  
+ 
+  
+  .signupbtn .sb {
+    display: none;
+  }
+
+  .email-signupImg img {
+    width: 50%;
+    position: relative;
+    bottom: 20px;
+  }
+  .es-p{
+    color: #494949 !important;
+  }
+
+  
+  
+  
+  
+
+
+
+
+
+  @media screen and (max-width: 425px),
+  (max-width: 375px),
+  (max-width: 325px) {
+    .nav {
+      display: none;
+    }
+  
+    .efs-login-page {
+      background: #ffffff;
+      padding: 0 50px;
+      height: 100vh;
+    }
+  
+    .efs-login-box {
+      width: 310px;
+      height: 100%;
+      padding: 55px 16px;
+    }
+  
+   
+  
+    .signupbtn .sb {
+      display: block;
+      color: #426572;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .email-signupImg img {
+      width: 100%;
+    }
+
+    .email-signupImg{
+      height: 300px;
+    }
+    .email-signupImg img {
+      width: 269px;
+      position: static;
+      bottom: 0;
+    }
+  
+  }

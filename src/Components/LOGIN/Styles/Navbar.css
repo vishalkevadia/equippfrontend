@@ -1,0 +1,71 @@
+.navbar {
+  padding: 10px 170px 10px 170px;
+  background: #2D5155;
+  width: 100%;
+}
+
+
+.navbar-brand img {
+  height: 56px;
+  width: 56px;
+}
+
+.nav-link {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #E8F3EC !important;
+}
+
+.checkout {
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.myorder {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width:1365px) {
+  .navbar-brand img {
+    height: 56px;
+    width: 56px;
+}
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1279px){
+.navbar {
+    padding: 10px 170px 10px 170px;
+}
+}
+
+@media screen and (max-width: 1280px) and (min-width:1024px) {
+  .navbar {
+    padding: 10px 170px 10px 170px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+  .myorder {
+    color: #000000;
+    font-size: 16px;
+  }
+}

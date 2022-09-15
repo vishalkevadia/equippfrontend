@@ -1,0 +1,88 @@
+.signupbtn .sb {
+  display: none;
+}
+
+.login-img img {
+  width: 70%;
+}
+
+
+@media screen and (max-width: 1600px) and (min-width:1439px) {
+
+  .login-img img {
+    width: 55%;
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width:1365px) {
+  .top-para {
+    margin-bottom: 0px;
+  }
+
+  .login-img img {
+    width: 56%;
+  }
+
+  .continue-btn-outline {
+    margin: 19px auto 0px;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width:1279px) {
+  .login-box h2 {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+@media screen and (max-width: 1280px) and (min-width:1023px) {
+  .login-img img {
+    width: 67%;
+  }
+
+  .continue-btn-outline {
+    margin: 19px auto 0px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width:768px) {
+  .login-img img {
+    width: 60%;
+}
+.uperBox p 
+{
+margin: 0;
+}
+}
+
+
+@media screen and (max-width: 425px),
+(max-width: 375px),
+(max-width: 325px) {
+  .nav {
+    display: none;
+  }
+
+
+
+  .signupbtn .sb {
+    display: block;
+    color: #426572;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .login-img img {
+    width: 80%;
+  }
+
+  .login-img {
+    height: 300px;
+  }
+
+}

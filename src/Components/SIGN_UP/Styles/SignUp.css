@@ -1,0 +1,65 @@
+.su-login-page {
+  background: #2D5155;
+  height: calc(100vh - 96px);
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.su-login-box {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.su-login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.su-login-box p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  margin-top: 30px;
+}
+
+.su-login-box input {
+  padding: 20px 30px;
+  gap: 10px;
+  width: 430px;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+.su-login-box .email-input {
+  padding: 0 10px !important;
+}
+
+
+.signupbtn .sb {
+  display: none;
+}
+
+.signupImg img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+
+ 

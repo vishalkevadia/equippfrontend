@@ -1,0 +1,245 @@
+.mo-login-page {
+  background: #2D5155;
+  height: calc(100vh - 96px);
+  padding: 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mo-login-box {
+  width: 510px;
+  height: 736px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.mo-login-box h2 {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #2D5155;
+}
+
+.mo-login-box p {
+  font-family: 'Spline Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  margin-top: 16px;
+}
+
+.mo-login-box input,
+.mo-login-box .continue-btn-outline {
+  width: 370px;
+  height: 58px;
+  padding: 0 !important;
+}
+
+.bb {
+  margin: 0 auto;
+}
+
+.mo-login-box .bb input {
+  width: 58px !important;
+  justify-content: center;
+  border: 1px solid #E8815D;
+}
+
+.mo-login-box input {
+  padding: 20px 30px;
+  gap: 10px;
+
+  width: 430px;
+  height: 56px;
+  border: 1px solid #D0D0D1;
+  border-radius: 10px;
+}
+
+.mo-login-box .continue-btn-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 10px;
+  width: 430px;
+  height: 56px;
+  border-radius: 10px;
+
+  border: solid 1px #F6996B;
+  background-color: #FFFFFF;
+
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  color: #426572;
+  margin-top: 30px;
+}
+
+.step {
+  font-family: 'Red Hat Display';
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #767677;
+}
+
+.pincode-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pincode-input-text {
+  width: 52px !important;
+  height: 55px !important;
+  border: 1px solid #E8815D !important;
+  border-radius: 10px;
+}
+
+
+
+.otp-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.otp-img img {
+height: 207px;
+  width: 250px;
+  position: relative;
+  bottom: 18px;
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) and (min-width:1439px) {
+
+  .mo-login-box {
+    height: 87%;
+    padding: 34px 40px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 1440px) and (min-width:1279px) {
+  .top-para {
+    margin-bottom: 0px;
+  }
+
+  .mo-login-box {
+    height: 92%;
+    padding: 32px 40px;
+
+  }
+
+  .mo-login-box {
+    width: 482px; 
+  }
+
+  .continue-btn-outline {
+    margin: 19px auto 0px;
+  }
+ 
+  .mo-login-box p {
+    margin-bottom: none !important;
+  }
+
+  .mo-login-box .continue-btn-outline {
+    margin-top: 14px;
+  }
+
+  .otp-img img {
+    height: 89%;
+    width: 184px;
+    object-fit: contain;
+}
+}
+
+@media screen and (max-width: 1280px) and (min-width:1024px) {
+  .login-img img {
+    width: 67%;
+  }
+
+  
+.mo-login-box {
+  width: 510px;
+  height: 618px; 
+  padding: 34px 40px; 
+}
+
+  .mo-login-box p {
+    margin-bottom: none !important;
+  }
+
+  .mo-login-box .continue-btn-outline {
+    margin-top: 20px;
+  }
+
+  .otp-img img {
+    height: 90%;
+    width: 204px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 425px),
+(max-width: 768px),
+(max-width: 325px) {
+  .nav {
+    display: none;
+  }
+
+  .mo-login-page {
+    background: #ffffff;
+    padding: 0 50px;
+    height: 100vh;
+  }
+
+  .mo-login-box {
+    width: 310px;
+    height: 100%;
+    padding: 60px 16px;
+  }
+
+
+  .mo-login-box input,
+  .mo-login-box .continue-btn-outline {
+    width: 90vw;
+    height: 52px;
+    padding: 0 !important;
+  }
+
+  .mo-login-box .bb input {
+    width: 50px !important;
+  }
+
+  form>div {
+    justify-content: center;
+  }
+
+  .otp-img {
+    height: 35%;
+  }
+
+
+}
