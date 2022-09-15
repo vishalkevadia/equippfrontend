@@ -12,6 +12,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../Loading'
 
+
+
 const STATUS = {
   STARTED: 'Started',
   STOPPED: 'Stopped',
@@ -59,9 +61,10 @@ const MobileOtp = (props) => {
   let user_name = props.user_name
 
   const handleOtp = (e) => {
-    const mobOtp = { mobile_number: props.mobile_number, otp }
+   const mobOtp = { mobile_number: props.mobile_number, otp }
     e.preventDefault()
     setLoading(true)
+
     fetch(`${process.env.REACT_APP_API_KEY}loginapi_with_mobile_number`,
       {
         method: "POST",
@@ -77,7 +80,9 @@ const MobileOtp = (props) => {
             setVerified(result)
             setLoading(false)
             handleStart()
-            localStorage.setItem('mobileToken', JSON.stringify(result.access))
+
+           localStorage.setItem('mobileToken', JSON.stringify(result.access))
+
           })
         }
         else if (response.status === 400) {
@@ -86,10 +91,17 @@ const MobileOtp = (props) => {
               toast.error(result.error, { theme: 'colored' })
             }
           })
+
         }
         setOtp('')
+
+
+       
         setLoading(false)
+
       })
+
+
   }
 
   let stringMob = props.mobile_number,
@@ -98,6 +110,7 @@ const MobileOtp = (props) => {
   let mobile_number = { mobile_number: props.mobile_number }
   const handleResend = (e) => {
 
+    // setLoading(true)
     fetch(`${process.env.REACT_APP_API_KEY}loginapi_with_mobile_number`,
       {
         method: "POST",
@@ -111,6 +124,8 @@ const MobileOtp = (props) => {
           response.json().then((result) => {
             setDismiss(false)
             setSecondsRemaining(INITIAL_COUNT)
+
+
           })
         } else {
           response.json().then((result) => {
@@ -121,12 +136,20 @@ const MobileOtp = (props) => {
         }
         // setLoading(false)
         setOtp('')
+
       })
+
   }
+
+
+
+
 
   const handleStart = () => {
     setStatus(STATUS.STARTED)
   }
+
+
 
   useEffect(() => {
     handleStart()
@@ -159,6 +182,8 @@ const MobileOtp = (props) => {
                 <div>
                   <h2> Hello! <br className='info-br' />  {user_name}</h2>
                   <p>{`Please enter the OTP sent to ${mob}`}</p>
+
+
                 </div>
                 <div className="text-center common-width signupOtp">
                   <img src={otpImg} alt="LoginPage" />
@@ -171,9 +196,11 @@ const MobileOtp = (props) => {
                       onChange={handleChange}
                       numInputs={6}
                       separator={<span> &nbsp;&nbsp; </span>}
+
                     />
                     <p style={{ color: '#8C8D8D' }}>I haven’t recieved a code ({twoDigits(minutesToDisplay)}:
                       {twoDigits(secondsToDisplay)})</p>
+
                     {
                       secondsRemaining === 0 ?
                         <p style={{ color: '#e8815d', margin: '0px', cursor: 'pointer', display: 'block' }} onClick={handleResend}>Re-send OTP</p>
