@@ -12,17 +12,6 @@ import leftArrow from './Styles/Images/Line 337.png'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 export default function OrderSummary() {
 
   const [productList, setProductList] = useState([]);
@@ -53,8 +42,6 @@ export default function OrderSummary() {
             setLoading(false)
           })
         }
-
-
         else {
           response.json().then((result) => {
             setVarified(false)
@@ -62,10 +49,7 @@ export default function OrderSummary() {
           })
         }
         setLoading(false)
-
       })
-
-
   }
 
 
@@ -119,17 +103,13 @@ export default function OrderSummary() {
   return (
     <>
       {loading === true && <Loading />}
-
-
       <>
         <CheckoutNav title='checkout' />
         <div className="row order-summary-container">
           <h2 className="res-title desc">Order Summary</h2>
-
           <div className="col-9 order-summary-product-box col-sm-10">
             <div className='left-arrow'>
             </div>
-
             <div className="box row">
               <div className="product_area">
                 <div className="col-xl-4 col-sm-4 col-4 product-image">
@@ -147,7 +127,6 @@ export default function OrderSummary() {
                         </h4>
                         <p className='perMonth'>Paying Your <span className='ph-number'>{ordinal_suffix_of(nextDue)}</span>&nbsp;Installment</p>
                       </div>
-
                     </div>
                     <hr />
                     <div className="tenure_container">
@@ -155,29 +134,22 @@ export default function OrderSummary() {
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
             <h2 className="res-title">Order Summary</h2>
             <img src={leftArrow} alt="leftArrow" onClick={prevPage} className='leftArrow-1' />
-
           </div>
           <div className="col-4 order-summary-price-details">
             <div className="orderData">
-
               <h2 className='od-h2'>Order Summary</h2>
-
               <h6 className='mb-3 mrp'>
                 <span className='price-title'>Rental per Month</span>
                 <span className='price-amount'> ₹{productList.monthly_rental}</span>
               </h6>
-
               <h6 className='mb-3'>
                 <span className='price-title'>Insurance per month</span>
                 <span className='price-amount'>  ₹{productList.insurance}</span>
               </h6>
-
               <h6 className='mb-3'>
                 <span className='price-title'>Delivery Fee</span>
                 <span className='price-amount'> {productList.delivery_fee} </span>
@@ -186,7 +158,6 @@ export default function OrderSummary() {
                 <span className='price-title'>GST {productList.GST}%</span>
                 <span className='price-amount'> {taxable_amount}</span>
               </h6>
-
               <h6 className='grand-total'>
                 <span>Monthly Amount</span>
                 <span>₹{productList.monthly_payment}</span>
@@ -202,8 +173,6 @@ export default function OrderSummary() {
                 <span>₹{productList.total_amount_payable}</span>
               </h6>
             </div>
-
-
             <p className='white-alert d-flex align-items-center justify-content-center mob-info mb-0'><img src={vector1} className='pe-1 v1' alt='vector1' />
               <img src={vector2} className='pe-1 v2' alt='vector2' />  Documents for KYC and Verification will be asked</p>
             <div className='continuebtn '>
@@ -213,11 +182,8 @@ export default function OrderSummary() {
               </button>
             </div>
           </div>
-
         </div>
       </>
-
-
     </>
   )
 }
