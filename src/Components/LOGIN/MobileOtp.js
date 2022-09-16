@@ -65,7 +65,7 @@ const MobileOtp = (props) => {
     e.preventDefault()
     setLoading(true)
 
-    fetch(`${process.env.REACT_APP_API_KEY}loginapi_with_mobile_number`,
+    fetch(`${process.env.REACT_APP_API_KEY}/loginapi_with_mobile_number`,
       {
         method: "POST",
         headers: {
@@ -111,7 +111,7 @@ const MobileOtp = (props) => {
   const handleResend = (e) => {
 
     // setLoading(true)
-    fetch(`${process.env.REACT_APP_API_KEY}loginapi_with_mobile_number`,
+    fetch(`${process.env.REACT_APP_API_KEY}/loginapi_with_mobile_number`,
       {
         method: "POST",
         headers: {

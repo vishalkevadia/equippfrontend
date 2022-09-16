@@ -68,7 +68,7 @@ const SignUpOtp = (props) => {
   const handleOtp = (e) => {
     let mobOtp = { username, mobile_number, email, otp }
     e.preventDefault()
-    otp !== '' && fetch(`${process.env.REACT_APP_API_KEY}register`,
+    otp !== '' && fetch(`${process.env.REACT_APP_API_KEY}/register`,
       {
         method: "POST",
         headers: {
@@ -121,7 +121,7 @@ const SignUpOtp = (props) => {
 
     setLoading(true)
 
-    fetch(`${process.env.REACT_APP_API_KEY}register`,
+    fetch(`${process.env.REACT_APP_API_KEY}/register`,
       {
         method: "POST",
         headers: {

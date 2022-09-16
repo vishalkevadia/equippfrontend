@@ -29,7 +29,7 @@ const SignUp = () => {
     e.preventDefault()
     setLoading(true)
 
-    fetch(`${process.env.REACT_APP_API_KEY}register`,
+    fetch(`${process.env.REACT_APP_API_KEY}/register`,
       {
         method: "POST",
         headers: {
